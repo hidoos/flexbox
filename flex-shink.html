@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-shink</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background: #ccc;
+            width: 600px;
+            height: 200px;
+            display: flex;
+            text-align: center;
+            /** 
+             * 800 - 600 = 200
+             * 200/3 *2
+             * 200/3 * 1
+             */
+        }
+        .flex-item1 {
+            flex-basis: 400px;
+            flex-shrink: 2;
+            background: lightblue;
+        }
+        .flex-item2 {
+            flex-basis: 400px;
+            flex-shrink: 1;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item1">
+        item1
+        </div>
+        <div class="flex-item2">
+        item2
+        </div>
+    </div>
+</body>
+</html>

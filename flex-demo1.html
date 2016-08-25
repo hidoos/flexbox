@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox-flex</title>
+    <style>
+        body,div{
+            margin:0;
+            padding:0;
+        }
+        .container {
+            display:flex;
+            justify-content:center;
+        }
+        .flex-item {
+            text-align:center;
+            height:200px;
+            color:#fff;
+            line-height:200px;
+            font-weight:bold;
+            font-size:40px;
+            font-family: Source code pro;
+        }
+        .flex-item:nth-child(1) {
+            background:hsl(150,60%,30%);
+            flex-basis:400px;
+            flex-grow:10;
+            flex-shrink:10;
+        }
+        .flex-item:nth-child(2) {
+            background:hsl(180,60%,30%);
+            flex-basis:400px;
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>flexbox flex 属性的用法</h2>
+        <p>
+            <code>
+                flex: &lt;flex-grow&gt;,&lt;flex-shrink&gt;,&lt;flex-basis&gt;
+            </code>
+        </p>
+    </header>
+    <div class="container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+    </div>
+</body>
+</html>
